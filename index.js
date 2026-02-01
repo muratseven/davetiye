@@ -1,6 +1,3 @@
-// ===============================
-// COUNTDOWN
-// ===============================
 const weddingDate = new Date(2026, 4, 24, 13, 0, 0);
 
 function updateCountdown() {
@@ -32,9 +29,6 @@ function updateCountdown() {
 updateCountdown();
 setInterval(updateCountdown, 1000);
 
-// ===============================
-// COLLAPSE + CONFETTI
-// ===============================
 function toggleDonationCollapse(button) {
   const collapse = button.nextElementSibling;
   const icon = button.querySelector("svg");
@@ -50,9 +44,6 @@ function toggleDonationCollapse(button) {
   }
 }
 
-// ===============================
-// CONFETTI (SAĞA DOĞRU)
-// ===============================
 function createConfettiFromButton(button) {
   const rect = button.getBoundingClientRect();
 
