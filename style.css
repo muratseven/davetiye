@@ -13,10 +13,6 @@
   font-weight: 400;
 }
 
-/* Cormorant Garamond sistemde yoksa, tarayıcı Google Fonts üzerinden yüklenmiyorsa 
-     sıradaki serif'e düşer; istersen ayrıca @import ile Google Fonts ekleyebilirsin. */
-
-/* Genel reset */
 *,
 *::before,
 *::after {
@@ -74,7 +70,6 @@ body {
   color: var(--color-text);
 }
 
-/* Hero */
 .hero {
   min-height: 100vh;
   display: flex;
@@ -94,7 +89,6 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.12);
 }
 
-/* "Biz evleniyoruz" -> Lora, serif */
 .hero-subtitle {
   font-family: "Lora", serif;
   text-transform: uppercase;
@@ -105,7 +99,6 @@ body {
   line-height: 1.25rem;
 }
 
-/* Başlık: Sine & Murat + Geri Sayım + tagline + tarih -> Great Vibes */
 .hero-title {
   font-family: "Great Vibes", cursive;
   font-weight: 400;
@@ -138,7 +131,6 @@ body {
   color: hsl(42 85% 55%);
 }
 
-/* Tarih -> Great Vibes */
 .hero-date {
   font-family: "Great Vibes", cursive;
   font-weight: 400;
@@ -148,7 +140,6 @@ body {
   margin-bottom: 0;
 }
 
-/* Çizgili ✦ ayırıcı */
 .fancy-divider {
   display: flex;
   align-items: center;
@@ -170,7 +161,6 @@ body {
   text-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
 }
 
-/* Aşağı ok */
 .hero-scroll {
   margin-top: 1.2rem;
   display: flex;
@@ -197,7 +187,6 @@ body {
   color: var(--color-accent);
 }
 
-/* Butonlar (detay bölümü kaldırıldığı için şimdilik sadece stiller duruyor) */
 .btn-secondary,
 .btn-outline {
   display: inline-block;
@@ -232,7 +221,6 @@ body {
   background: rgba(255, 255, 255, 0.12);
 }
 
-/* Bölümler */
 .section {
   padding: 4rem 1.5rem;
 }
@@ -242,7 +230,6 @@ body {
   margin: 0 auto;
 }
 
-/* "Geri Sayım" başlığı -> Great Vibes */
 .section h2 {
   font-family: "Great Vibes", cursive;
   font-weight: 400;
@@ -253,7 +240,6 @@ body {
   letter-spacing: 0.06em;
 }
 
-/* "Hayatımızın en özel günü için" -> Great Vibes */
 .section-subtitle {
   font-family: "Great Vibes", cursive;
   font-weight: 400;
@@ -270,8 +256,6 @@ body {
   color: var(--color-accent);
 }
 
-/* Geri Sayım */
-/* Gün, Saat, Dakika, Saniye ve değerleri -> Cormorant Garamond */
 .countdown-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -365,7 +349,6 @@ body {
   }
 }
 
-/* fancy-divider için md breakpoint genişlikleri */
 @media (min-width: 768px) {
   .fancy-divider {
     margin: 2rem 0;
@@ -375,8 +358,6 @@ body {
     width: 5rem;
   }
 }
-
-/* Konum bölümü */
 
 .section-location {
   padding-top: 3rem;
@@ -392,7 +373,6 @@ body {
   text-align: center;
 }
 
-/* Üstteki yuvarlak ikon */
 .location-icon-wrapper {
   width: 4rem;
   height: 4rem;
@@ -457,8 +437,6 @@ body {
   font-size: 0.95rem;
 }
 
-/* Görsel + Harita */
-
 .location-media {
   margin-bottom: 1.75rem;
 }
@@ -505,8 +483,6 @@ body {
 .location-map:hover {
   filter: sepia(0);
 }
-
-/* Haritada Aç butonu */
 
 .location-actions {
   margin-top: 1.75rem;
@@ -559,8 +535,6 @@ body {
   }
 }
 
-/* Konum bölümü */
-
 .section-location {
   padding-top: 3rem;
   padding-bottom: 4rem;
@@ -576,8 +550,6 @@ body {
   max-width: 960px;
   margin: 0 auto;
 }
-
-/* Üstteki yuvarlak ikon */
 
 .location-icon-wrapper {
   width: 4rem;
@@ -595,8 +567,6 @@ body {
   height: 1.75rem;
   color: #314029;
 }
-
-/* Başlık ve metinler */
 
 .location-title {
   font-family: "Great Vibes", cursive;
@@ -647,8 +617,6 @@ body {
   text-transform: uppercase;
 }
 
-/* Görsel + Harita */
-
 .location-media {
   display: grid;
   gap: 1.25rem;
@@ -693,8 +661,6 @@ body {
   filter: sepia(0);
 }
 
-/* Haritada Aç butonu */
-
 .location-actions {
   margin-top: 1.5rem;
   display: flex;
@@ -729,8 +695,6 @@ body {
   color: #f5f1e4;
   transform: translateY(-1px);
 }
-
-/* Responsive ayar */
 
 @media (max-width: 720px) {
   .location-card {
@@ -798,7 +762,6 @@ body {
     height: 200px;
   }
 }
-/* Davet mesajı bölümü */
 
 .section-invite {
   padding-top: 3rem;
@@ -840,7 +803,6 @@ body {
   font-size: 1.05rem;
   color: var(--color-muted);
 }
-/* TEMA Bölümü ek tasarımları */
 
 .section-padding {
   padding: 4rem 1.5rem;
@@ -1050,7 +1012,7 @@ body {
 }
 
 .donation-collapse.active {
-  max-height: 1200px; /* görsel yüksekliği için yeterli */
+  max-height: 1200px;
   opacity: 1;
 }
 
