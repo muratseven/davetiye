@@ -178,8 +178,9 @@ body {
 }
 
 .hero-scroll-icon {
-  width: 20px;
-  height: 20px;
+  width: 24px;
+  height: 24px;
+  color: hsl(42 85% 55%);
 }
 
 .hero-scroll-link:hover {
